@@ -23,10 +23,10 @@ function closestSquare(input) // Returns N where N^2 is the closest square to in
 
 function bakhshali(input)
 {
-	var close = closestSquare(input);
-	var difference = input - close * close;
-	var p = difference / (2 * close);
-	var a = close + p;
-	var approximate = a - (p * p) / (2 * a);
+	var close = closestSquare(input),
+		difference = input - close * close,
+		p = difference / (2 * close),
+		a = close + p,
+		approximate = a - (p * p) / (2 * a);
 	return approximate;
 }
